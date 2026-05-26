@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>⚡︎ Lumina</h1>
+        <h1 class="logo">⚡︎ Lumina</h1>
 
         <ul>
             <li><a href="">Soluções</a></li>
@@ -18,7 +18,12 @@
         </ul>
     </header>
     <main>
+        <div class="text">
+            <p class="slogan">⚡︎ Energia inteligente para o futuro</p>
 
+            <h1 class="principal">Transforme energia <br> em <span> eficiência</span></h1>
+            <p class="subtitulo">Soluções sustentáveis e tecnologia de ponta para reduzir custos, aumentar eficiência energética e construir um futuro mais verde.</p>
+        </div>
     </main>
     <footer>
 
@@ -35,6 +40,62 @@
     box-sizing: border-box;
 }
 
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal span{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 156, 84),
+        rgb(0, 0, 184),
+        rgb(0, 156, 84)
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s linear infinite;
+}
+
+.subtitulo{
+    font-family: 'DM Sans',Arial,sans-serif;
+    font-size: 20px;
+    color: #4b5563;
+    margin-top: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+@keyframes gradientMove{
+    to{
+        background-position: 200% center;
+    }
+}
+
+.principal{
+    font-family: 'DM Sans',Arial,sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+    color: black;
+    margin-top: 20px;
+    line-height: 0.9;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.slogan{
+    color: #059669;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #a7f3d0;
+    font-family: 'DM Sans',Arial,sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    width: fit-content;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -43,7 +104,7 @@ header{
     box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.1);
 }
 
-h1{
+.logo{
     font-family: 'DM Sans',Arial,sans-serif;
     font-size: 35px;
     color: black;
@@ -72,7 +133,7 @@ a:hover{
 }
 
 .button{
-    background: linear-gradient(to right, rgb(0, 122, 65), rgb(0, 0, 148));
+    background: linear-gradient(to right, #059669, #2563eb);
     padding: 15px;
     border-radius: 30px;
     color: white;
