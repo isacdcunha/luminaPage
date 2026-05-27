@@ -46,13 +46,8 @@ O site foi desenvolvido utilizando HTML5 e CSS3, com foco em design moderno, exp
  ├── index.html
  ├── img/
  └── README.md
-## Tecnologias utilizadas
 
-- HTML5
-- CSS3
-- Google Fonts
-
----
+ ---
 
 ## Como executar
 
