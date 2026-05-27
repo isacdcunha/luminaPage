@@ -18,11 +18,43 @@
         </ul>
     </header>
     <main>
+        <div class="secaoUm">
         <div class="text">
             <p class="slogan">⚡︎ Energia inteligente para o futuro</p>
 
             <h1 class="principal">Transforme energia <br> em <span> eficiência</span></h1>
             <p class="subtitulo">Soluções sustentáveis e tecnologia de ponta para reduzir custos, aumentar eficiência energética e construir um futuro mais verde.</p>
+        </div>
+        <div class="botoes">
+            <button class="botaoUm">Solicitar orçamento -></button>
+            <button class="botaoDois">Conhecer Soluções</button>
+        </div>
+        <div class="numeros">
+            <div class="item">
+                <h1>98%</h1>
+                <p>Eficiência energética</p>
+            </div>
+        
+            <div class="item">
+                <h1>50+</h1>
+                <p>Projetos entregues</p>
+            </div>
+        
+            <div class="item">
+                <h1>30%</h1>
+                <p>Redução de custos</p>
+            </div>
+        
+            <div class="item">
+                <h1>24/7</h1>
+                <p>Suporte técnico</p>
+            </div>
+        </div>
+    </div>
+        <div class="secaoDois">
+            <p class="desafios">Desafios do Mercado</p>
+            <h1 class="titulo">Problemas que afetam seu negócio hoje</h1>
+            <p class="paragrafo">O cenário energético atual apresenta desafios complexos que exigem soluções inovadoras.</p>
         </div>
     </main>
     <footer>
@@ -38,6 +70,124 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.paragrafo{
+    font-family: 'DM Sans',Arial,sans-serif;
+    color: #4b5563;
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+    width: 650px;
+}
+
+.titulo{
+    font-family: 'DM Sans',Arial,sans-serif;
+    color: #111111;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    width: 700px;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.desafios{
+    font-family: 'DM Sans',Arial,sans-serif;
+    color: #059669;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.secaoUm{
+    background-image: linear-gradient(
+        rgba(255,255,255,1),
+        rgba(255,255,255,0.75),
+        rgba(255,255,255,0.95)
+    ),
+    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHBhbmVscyUyMHN1c3RhaW5hYmxlJTIwZW5lcmd5JTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3Nzg4ODU2OTh8MA&ixlib=rb-4.1.0&q=80&w=1080');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+.secaoDois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.numeros{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'DM Sans',Arial,sans-serif;
+    padding: 0 0 60px 0;
+}
+
+.item h1{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.item p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botaoUm{
+    padding: 15px;
+    background-color: #059669;
+    font-family: 'DM Sans',Arial,sans-serif;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botaoDois{
+    padding: 15px;
+    background-color: white;
+    font-family: 'DM Sans',Arial,sans-serif;
+    border-radius: 30px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.botaoDois:hover{
+    border: 2px solid #059669;
+}
+
+.botaoUm:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .text{
